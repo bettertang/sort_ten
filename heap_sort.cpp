@@ -6,7 +6,7 @@ void  max_heap_down(int *a,int start,int end)
 		int l = 2*c+1;
 		int temp = a[c];
 		
-		for(;l<=end;++i)
+		for(;l<=end;c=l,l=2*l+1)
 		{
 			if(l<end && a[l]<a[l+1])
 				++l;
